@@ -5,5 +5,10 @@ Expect: new Pizza("6 inch","canadian bacon","pineapple","colossal crust").toEqua
 
 Describe: Pizza.prototype.priceOfSize()
 
-Tes: It should calculate and return the prize of the size selected.
-Expect: newOrder.priceOfSize("6 inch").toEqual("$8")
+Test: It should calculate and return the prize of the size selected.
+Expect: newOrder.priceOfSize("6 inch").toEqual(9)
+
+Descibe: Pizza.prototype.priceOfMeat()
+
+Test: It should include the extra price of selected meat add ons.
+Expect: newOrder.priceOfMeat("canadian bacon").toEqual(14.5)
