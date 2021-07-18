@@ -10,5 +10,11 @@ Expect: newOrder.priceOfSize("6 inch").toEqual(9)
 
 Descibe: Pizza.prototype.priceOfMeat()
 
-Test: It should include the extra price of selected meat add ons.
-Expect: newOrder.priceOfMeat("canadian bacon").toEqual(14.5)
+Test: It should include the extra price of selected meat add-ons.
+Expect: newOrder.priceOfMeat("canadian bacon").toEqual(15)
+
+Describe: Pizza.prototype.priceOfVeg()
+
+Test: It should include the extra price of selected veggie add-ons
+Expect: newOrder.priceOfVeg("mushrooms").toEqual(13.5)
+

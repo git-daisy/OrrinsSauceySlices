@@ -20,5 +20,9 @@ Pizza.prototype.priceOfSize = function() {
 } 
 
 Pizza.prototype.priceOfMeat = function() {
-  return this.ongoingPrice += (this.meatArray.length + 2.5);
+  return this.ongoingPrice += (this.meatArray.length + 3);
+}
+
+Pizza.prototype.priceOfVeg = function() {
+  return this.ongoingPrice += (this.vegArray.length + 1.5);
 }
