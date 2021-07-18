@@ -20,15 +20,15 @@ Pizza.prototype.priceOfSize = function() {
 } 
 
 Pizza.prototype.priceOfMeat = function() {
-  return this.ongoingPrice + 3;
+  return this.ongoingPrice += (this.meatArray + 3);
 }
 
 Pizza.prototype.priceOfVeg = function() {
-  return this.ongoingPrice + 1.5;
+  return this.ongoingPrice += 1.5;
 }
 
 Pizza.prototype.priceOfCrust = function() {
-  return this.ongoingPrice + 2;
+  return this.ongoingPrice += 2;
 }
 
 $(document).ready(function() {
@@ -46,7 +46,7 @@ $(document).ready(function() {
     });
     $("input:checkbox[name=crust]:checked").each(function() {
       crustArray.push($(this).val());
-    });
+    })
 
     let newOrder = new Pizza(size,meatArray,vegArray,crustArray)
 
