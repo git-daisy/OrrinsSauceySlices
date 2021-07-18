@@ -19,7 +19,7 @@
           <div class="row">
             <div class="col-md">
               <p>Pick Ya' Pie Size:</p>
-              <select class="form-control" id="sizeOfPie">
+              <select class="form-control" id="size">
                 <option disabled selected value>Choose</option>
                 <option>6 inch Personal Zaa - $9</option>
                 <option>10 inch Zaa For Two - $14</option>
@@ -52,13 +52,12 @@
                 <input type="checkbox" name="crust" value="colossal"> Colossal Crust ~ Its big.. <br>
               </div>
             </div>
-            <btn type="submit" class="button"> What's the Damage?</btn>
+            <button type="submit" class="button"> What's the Damage?</button>
           </div>
         </form>
       </div>
-      <div id="total">
-        <p>You owe us $<span id="damage"></span></p>
-      </div>
+      <span id="total"><p>You owe us $<span id="damage"></span> </p>
+      </span>
     </div>
   </body>
 </html>

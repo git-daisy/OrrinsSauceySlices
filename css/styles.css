@@ -24,7 +24,12 @@ body {
 }
 
 #total {
-  display:none;
   color:red;
   font-weight: bolder;
+}
+
+button {
+color: seagreen;
+display: inline-block;
+text-align: center;
 }
