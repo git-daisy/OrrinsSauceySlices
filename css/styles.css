@@ -1,10 +1,9 @@
 body {
+  text-align: center;
+  background-color: rgb(26, 24, 24);
   font-family: luminari;
 }
-.container {
-  position: relative;
-  text-align: center;
-}
+
 .pizzaBanner {
   border-width: 50;
   width: 900px;
@@ -21,5 +20,11 @@ body {
 }
 
 .menu {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(229, 229, 147);
+}
+
+#total {
+  display:none;
+  color:red;
+  font-weight: bolder;
 }

@@ -1,6 +1,6 @@
-function Pizza(size, crust, meatArray, vegArray) {
+function Pizza(size, crustArray, meatArray, vegArray) {
   this.size = size;
-  this.crust = crust;
+  this.crust = crustArray;
   this.meatArray = meatArray;
   this.vegArray = vegArray;
   this.ongoingPrice = 0;
@@ -25,4 +25,8 @@ Pizza.prototype.priceOfMeat = function() {
 
 Pizza.prototype.priceOfVeg = function() {
   return this.ongoingPrice += (this.vegArray.length + 1.5);
+}
+
+Pizza.prototype.priceOfCrust = function {
+  return this.ongoingPrice += (this.crustArray.length + 2);
 }
