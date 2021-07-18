@@ -7,11 +7,11 @@ function Pizza(size, crust, meatArray, vegArray) {
 }
 
 Pizza.prototype.priceOfSize = function() {
-  if (this.size === "6 inch") {
+  if (this.size === "6 inch Personal Zaa - $9") {
     this.ongoingPrice = 9;
   }
-  else if (this.size === "8 inch") {
-    this.ongoingPrice = 12;
+  else if (this.size === "10 inch Zaa For Two - $14") {
+    this.ongoingPrice = 14;
   }
   else {
     this.ongoingPrice = 20;

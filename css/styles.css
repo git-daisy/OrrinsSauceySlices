@@ -1,3 +1,6 @@
+body {
+  font-family: luminari;
+}
 .container {
   position: relative;
   text-align: center;
@@ -11,9 +14,12 @@
 .shopName {
   position: absolute;
   color: brown;
-  font-family: luminari;
   font-size: x-large;
   top: 8px;
   left: 300px;
   transform: rotate(-5deg);
+}
+
+.menu {
+  background-color: lightgoldenrodyellow;
 }
