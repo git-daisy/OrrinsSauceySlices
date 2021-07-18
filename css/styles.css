@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  text-align: center;
+}
+.pizzaBanner {
+  border-width: 50;
+  width: 900px;
+  height: 200px;
+  
+}
+.shopName {
+  position: absolute;
+  color: brown;
+  font-family: luminari;
+  font-size: x-large;
+  top: 8px;
+  left: 300px;
+  transform: rotate(-5deg);
+}
