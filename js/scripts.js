@@ -2,7 +2,7 @@ function Pizza(size, meatArray, vegArray, crustArray) {
   this.size = size;
   this.meatArray = meatArray;
   this.vegArray = vegArray;
-  this.crust = crustArray;
+  this.crustArray = crustArray;
   this.ongoingPrice = 0;
 }
 
@@ -11,25 +11,25 @@ Pizza.prototype.priceOfSize = function() {
     this.ongoingPrice = 9;
   }
   else if (this.size === "10 inch Zaa For Two - $14") {
-    this.ongoingPrice = 14;
+    this.ongoingPrice = 14 ;
   }
   else {
     this.ongoingPrice = 20;
   }
-  return this.ongoingPrice;
-} 
+}
 
 Pizza.prototype.priceOfMeat = function() {
-  return this.ongoingPrice += (this.meatArray + 3);
+  this.ongoingPrice += (this.meatArray.length * 3);
 }
 
 Pizza.prototype.priceOfVeg = function() {
-  return this.ongoingPrice += 1.5;
+  this.ongoingPrice += (this.vegArray.length * 1.5);
 }
 
 Pizza.prototype.priceOfCrust = function() {
-  return this.ongoingPrice += 2;
+  this.ongoingPrice += (this.crustArray.length * 2);
 }
+
 
 $(document).ready(function() {
   $("form#menuItems").submit(function(event) {
@@ -46,9 +46,9 @@ $(document).ready(function() {
     });
     $("input:checkbox[name=crust]:checked").each(function() {
       crustArray.push($(this).val());
-    })
+    });
 
-    let newOrder = new Pizza(size,meatArray,vegArray,crustArray)
+    let newOrder = new Pizza(size, meatArray, vegArray, crustArray);
 
     newOrder.priceOfSize();
     newOrder.priceOfMeat();
